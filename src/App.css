@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: linear-gradient(to right, #3a72ee, #66b2ff); /* Gradient background from thick blue to light blue */
+  min-height: 100vh;
+  min-height: 100vh;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 350px; /* Increase the width of the card */
+  margin: 0 10px; /* Add some margin */
+  height: auto; /* Ensure height adjusts according to content */
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  color: #d4c9c9;
+}
+
+.card .price {
+  font-size: 24px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card ul li {
+  margin: 5px 0;
+  color: #000; /* All text in black */
+}
+
+.card ul li::before {
+  content: ' ';
+  color: black; /* Black color for ticks */
+}
+
+.card ul li.included::before {
+  content: '✓ ';
+}
+
+.card ul li.excluded::before {
+  content: '✗ ';
+  color: lightgrey;  /* light grey  color for crosses  */
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 15px 24px; /* Increase button padding */
+  background-color: #0056b3; /* Primary color for all buttons */
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%; /* Make buttons full width */
+}
+
+.btn:hover {
+  background-color: #004494; /* Slightly darker shade on hover */
+}
+
+.btn.free {
+  background-color: #66b2ff; /* Light blue for the "Free" button */
+}
+
+.btn.plus {
+  background-color: #66b2ff; /* Primary color for the "Plus" button */
+}
+
+.btn.pro {
+  background-color: #3a72ee; /* Dark blue for the "Pro" button */
+}
